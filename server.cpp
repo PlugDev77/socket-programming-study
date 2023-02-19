@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
 
 	// 클라이언트로부터 데이터를 읽고, 데이터 내용과 길이를 저장함
 	PlayerPos player_pos;
-	int str_len = read(client_sock, (PlayerPos*)&player_pos, sizeof(data));
+	int str_len = read(client_sock, (PlayerPos*)&player_pos, sizeof(player_pos));
 	if (str_len == -1)
 		error_handling("read() error");
 
