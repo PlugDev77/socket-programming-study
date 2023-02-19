@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
 		error_handling("read() error");
 
 	// 메시지를 출력함
-	printf("클라이언트가 이거 줬어요:%s\n", data);
+	printf("Message from client:%s\n", data);
 
 	// write 함수는 데이터를 전송하는 기능의 함수인데, 이 문장이 실행됬다는 것은 연결요청이 있었다는 뜻
 	data[0] = 'Z';
